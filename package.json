@@ -13,7 +13,7 @@
     "@clerk/nextjs": "^6.31.10",
     "@neondatabase/serverless": "^1.0.1",
     "@prisma/adapter-neon": "^6.16.1",
-    "@prisma/client": "^6.15.0",
+    "@prisma/client": "^6.16.1",
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.12.1",
     "date-fns": "^4.1.0",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/ws": "^8.18.1",
-    "prisma": "^6.15.0",
+    "prisma": "^6.16.1",
     "tailwindcss": "^4"
   }
 }
