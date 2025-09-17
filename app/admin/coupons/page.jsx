@@ -29,9 +29,13 @@ export default function AdminCoupons() {
       const { data } = await axios.get("/api/admin/coupon", {
         headers: { Authorization: `Bearer ${token}` },
       })
-      setCoupons(data)
+      // Ensure we always set an array, handle both response structures
+      const couponData = Array.isArray(data) ? data : (data.coupons || [])
+      setCoupons(couponData)
     } catch (error) {
+      console.error("Failed to fetch coupons:", error)
       toast.error(error?.response?.data?.error || error.message)
+      setCoupons([]) // Set empty array on error
     }
   }
 
